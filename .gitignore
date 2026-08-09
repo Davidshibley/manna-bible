@@ -49,3 +49,10 @@ android/key.properties
 android/local.properties
 **/*.jks
 **/*.keystore
+
+# Build artifacts
+build/
+.dart_tool/
+.idea/
+*.iml
+.DS_Store

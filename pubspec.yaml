@@ -1,0 +1,59 @@
+name: bible_app
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.1+22
+
+environment:
+  sdk: ^3.6.1
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  isar_community: ^3.3.1
+  isar_community_flutter_libs: ^3.3.1
+  path_provider: ^2.1.5
+  share_plus: ^12.0.2
+  audioplayers: ^6.5.1
+  flutter_tts: ^4.2.5
+  shared_preferences: ^2.5.3
+  wakelock_plus: ^1.4.0
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
+  url_launcher: ^6.3.2
+  http: ^1.6.0
+  scrollable_positioned_list: ^0.3.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.0
+  isar_community_generator: ^3.3.1
+  flutter_native_splash: ^2.4.4 # 👈 1. Add this!
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/bibles/kjv.json
+    - assets/bibles/bible.json
+    - assets/images/
+    - assets/ # 👈 ADD THIS LINE!
+    - assets/translations/ # 🎯 Make sure this points to your translations folder!
+
+# 👇 2. Add this whole block at the very bottom of your pubspec.yaml file
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo-modified.png"
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  color: "#282a2a"
+  color_dark: "#282a2a"
+  image: "assets/logo-modified.png"
+  image_dark: "assets/logo-modified.png"
+  android: true
+  ios: true
